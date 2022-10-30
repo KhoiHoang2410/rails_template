@@ -55,7 +55,7 @@ run 'chmod +x bin/copy_samples'
 run 'echo "\nconfig/database.yml" >> .gitignore'
 run 'echo "config/secrets.yml" >> .gitignore'
 
-run 'cp config/database.yml config/database.sample.yml'
+run 'cp config/database.sample.yml config/database.yml'
 
 file 'config/secrets.sample.yml', <<-YML
 development: &dev
